@@ -6,7 +6,7 @@ The project involved building a MySQL database, cleaning data with Python/Excel,
 ---
 
 ## Why This Project?
-Climate change is often discussed emotionally — some minimize it, others exaggerate it.  
+Climate change is often discussed emotionally - some minimize it, others exaggerate it and the facts get lost in the process.  
 I wanted to apply **business analysis skills** to sustainability data to answer one question:  
 
 *“If data can solve business problems, why can’t it also clarify the truth about climate issues?”*  
