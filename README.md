@@ -9,20 +9,20 @@ The project involved building a MySQL database, cleaning data with Python/Excel,
 Climate change is often discussed emotionally — some minimize it, others exaggerate it.  
 I wanted to apply **business analysis skills** to sustainability data to answer one question:  
 
-👉 *“If data can solve business problems, why can’t it also clarify the truth about climate issues?”*  
+*“If data can solve business problems, why can’t it also clarify the truth about climate issues?”*  
 
 This project is my attempt to use **data storytelling** to highlight where responsibility lies and where action is most urgent.  
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Analyze global CO₂ emissions and deforestation using World Bank Data.  
 - Compare trends across **income groups** and **population levels**.  
 - Build dashboards that are **accessible, evidence-backed, and engaging** for both technical and non-technical audiences.  
 
 ---
 
-## 🛠 Tools & Skills Applied
+## Tools & Skills Applied
 - **SQL (MySQL):** Built relational schema, joins, calculated columns, and PK constraints.  
 - **Python (pandas):** Cleaned raw CSV (deforestation).  
 - **Excel:** Manual profiling & cleaning for other datasets.  
@@ -31,7 +31,7 @@ This project is my attempt to use **data storytelling** to highlight where respo
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 - [sql/](sql)  
   - [schema_and_etl.sql](sql/schema_and_etl.sql) → Creates tables and loads data from staging tables.  
   - [analysis_queries.sql](sql/analysis_queries.sql) → Analysis queries used to generate insights for dashboards.  
@@ -44,7 +44,7 @@ This project is my attempt to use **data storytelling** to highlight where respo
 
 ---
 
-## 🔄 Process Overview
+## Process Overview
 1. **Extract** — Collected World Bank datasets on emissions, deforestation, population, land area, and income.  
 2. **Transform** — Cleaned with Python & Excel; standardized headers, dropped nulls, profiled values.  
 3. **Load** — Built a **MySQL relational database** with PKs (`country_code, year`) and merged fact tables.  
@@ -53,7 +53,7 @@ This project is my attempt to use **data storytelling** to highlight where respo
 
 ---
 
-# 📊 Visuals
+# Visuals
 
 ### Database Schema
 <img src="docs/Relational_model.png" width="700"><br><br>
@@ -86,7 +86,7 @@ This project is my attempt to use **data storytelling** to highlight where respo
 
 ---
 
-## 📈 Visual Design
+## Visual Design
 - Two themed dashboards:  
   - *The Emission Gap* (income vs emissions).  
   - *Forest Decline* (global deforestation risk).  
@@ -95,21 +95,21 @@ This project is my attempt to use **data storytelling** to highlight where respo
 
 ---
 
-## 💡 Lessons Learned
+## Lessons Learned
 - **ETL matters as much as visuals** — cleaning and consistent schemas saved hours of debugging later.
 -  Creating **meaningful tags** from raw parameters can lead to much richer analysis — e.g., in this project, I tagged countries by income per capita into Low / Lower-Middle / Upper-Middle / High income groups to uncover inequality patterns.
 - **Storytelling > charts** — recruiters and stakeholders remember narratives, not bar charts.  
 
 ---
 
-## 🚀 How I’d Improve It (Next Iteration) 
+## How I’d Improve It (Next Iteration) 
 - Automate the full ETL pipeline with **Python scripts** instead of manual Excel cleaning.  
 - Deploy dashboards to **Power BI Service** for real-time interaction instead of local PBIX.  
 - Integrate **cloud SQL (AWS RDS / GCP)** for production-scale datasets.  
 
 ---
 
-## 📚 References
+## References
 
 - [World Bank: Income per capita](https://data.worldbank.org/indicator/NY.ADJ.NNTY.PC.CD)  
 - [World Bank: Population](https://data.worldbank.org/indicator/SP.POP.TOTL)  
