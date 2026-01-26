@@ -102,11 +102,19 @@ This project is my attempt to use **data storytelling** to highlight where respo
 
 ---
 
-## How I’d Improve It (Next Iteration) 
-- Automate the full ETL pipeline with **Python scripts** instead of manual Excel cleaning.  
-- Deploy dashboards to **Power BI Service** for real-time interaction instead of local PBIX.  
-- Integrate **cloud SQL (AWS RDS / GCP)** for production-scale datasets.  
+## How I’d Improve It (Next Iteration)
 
+- **Make data preparation reproducible**  
+  Replace manual Excel-based cleaning with a Python preprocessing script to make transformations repeatable, auditable, and easier to extend as new years or indicators are added.
+
+- **Introduce time-varying dimensions**  
+  Model population and income group as time-varying dimensions instead of fixing them to a reference year, to better capture structural changes such as income mobility and demographic shifts over time.
+
+- **Refactor the model if scale or refresh frequency increases**  
+  If the dataset were refreshed regularly or expanded, transition from a flat structure to a normalized star schema with separate dimension tables to improve maintainability and reduce the risk of duplication errors.
+
+- **Add focused trend-based views**  
+  Introduce a small number of targeted time-series views, such as per-capita emissions growth or deforestation rate changes, to highlight long-term directional patterns without extending into forecasting or causal modeling.
 ---
 
 ## References
