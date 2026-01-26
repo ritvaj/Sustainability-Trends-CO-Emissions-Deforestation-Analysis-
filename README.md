@@ -1,6 +1,6 @@
 <h1 align="center">Sustainability Trends: Global CO₂ Emissions & Deforestation Analysis</h1>
 
-**A relational SQL + Power BI project exploring global inequalities in emissions and forest loss.**  
+**Project exploring global inequalities in emissions and forest loss.**  
 The project involved building a MySQL database, cleaning data with Python/Excel, developing metrics, KPIs and creating narrative-rich dashboards in Power BI to cut through misinformation and present clear insights.
 
 ---
